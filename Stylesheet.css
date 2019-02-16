@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+	@media screen and (max-width: 300px) {
+  .body {
+	  max-width: 80%;
+	  margin-left: 90px;
+	}
+	
+
+	}
+
+		@media screen and (max-width: 300px) {
+  .ul {
+	  max-width: 20%;
+	}
+	}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+body {
+	 position: relative;
+	 padding-bottom: 6rem;
+	 margin: 0px;
+	 min-height: 100%;
+	 font: 15px calibri, sans-serif;
+	 background-color: fcfaf4;
+	 }
+	 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-width: 13%;
+	min-width: 13%;
+    background-color:2f384c;
+	height: 100%;
+	position: absolute;
+	Overflow: auto;
+
+}
+li a {
+    display: block;
+    color: white ;
+    padding: 8px 1px;
+    text-decoration: none;
+	font: arial, sans-serif;
+	font-size: 2vh;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+	max-width: 100%;
+}
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#navbar {
+	Overflow: hidden;
+	Float: left;
+	z-index:7;
+	width: 100%;
+	padding: 5px;
+	left: 1px;
+}
+	
+ul.nav {
+	top:50px;
+	left:0;
+	}
+
+/*.Navbar{ 
+	margin-top: 5px;
+	padding: 5px;
+	}
+	*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  background-color: 2f384c; /*  #2f384c dit is de kleur van de navbar*/
+  color: white;
+  text-align: center;
+  right: 0px;
+  left: 0px;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: 2f384c;
+  padding: 10px 5px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  background-color:2f384c;
+  text-align: center;
+  padding: 1px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  max-width: 100%;
+}
+
+.header a:hover {
+  background-color: #555;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  max-width: 13%;
+  padding: 1px 3px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+
